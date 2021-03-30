@@ -94,7 +94,7 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-p > button:hover {
+.task-wrapper > button:hover {
   color: #0fc57c;
 }
 
