@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower's Matrix">
+      <a class="header__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+      <section id="adding-section" class="adding">
+        <label class="adding__label" for="new-task">Add Item</label>
+        <div class="task-wrapper">
+          <input id="new-task" class="adding__task" type="text">
+          <button class="adding__btn">Add</button>
+        </div>
+      </section>
+      <section class="todo">
+        <h3 class="todo__title">Todo</h3>
+        <ul id="incomplete-tasks" class="todo__list">
+          <li class="todo__list-item">
+            <input class="todo__input_checkbox" type="checkbox">
+            <label class="todo__label task">Pay Bills</label>
+            <input class="todo__input_text" type="text">
+            <button class="edit">Edit</button>
+            <button class="delete">
+              <img src="./remove.svg" alt="">
+            </button>
+            </li>
+          <li class="todo__list-item edit-mode">
+            <input type="checkbox">
+            <label class="task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task">
+            <button class="edit">Save</button>
+            <button class="delete"><img src="./remove.svg" alt=""></button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed">
+        <h3 class="completed__title">Completed</h3>
+        <ul id="completed-tasks" class="completed__list">
+          <li class="completed__list-item">
+            <input class="completed__input_checkbox" type="checkbox" checked>
+            <label class="completed__label task">See the Doctor</label>
+            <input type="text" class="completed__input_text task">
+            <button class="edit">Edit</button>
+            <button class="delete"><img src="./remove.svg" alt=""></button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
